@@ -15,15 +15,12 @@ video: Chapter 2 - Part 3
  
  
  1) Write down the names of the 6 major primitive types available in C++  here:
- 
- 
- 
- 
- 
- 
- 
- 
- 
+ int
+ float
+ char
+ bool
+ double
+ long
  
 2) for each primitive type, write out 3 variable declarations inside the variableDeclaration() function on line 59.
     a) give each variable declaration an initial value
@@ -64,10 +61,11 @@ void variableDeclarations()
 {
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
+    float num2 = 3.14f;
+    char character = 'A';
+    bool isTrue = true;
     
-
-    
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(number, num2, character, isTrue); //passing each variable declared to the ignoreUnused() function
 }
 
 /*
@@ -81,45 +79,91 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
     return {}; //if your function returns something other than void, add 'return {};' at the end of it.
 } 
 
-/*
- 1)
+
+ 
+ 1) void phoneInfo(int battery, int ram, int age);
+{
+    
+    ignoreUnused(battery, ram, age);
+    return;
+}
+ 
+
+
+
+ 2) bool game (int off, int pause, int end = 0)
+ {
+    ignoreUnused(off, pause, end);
+    return false;
+    
+ }
+ 
+
+
+ 3) char grade(int marks);
+ {
+    ignoreUnused (marks);
+    return 'A';
+ }
+ 
+ 
+
+
+ 4) float Allpoints(float player1, float player2, float player3 = 0);
+ {
+    ignoreUnused (player1, player2, player3);
+    return 0.0f;
+ }
+ 
+
+
+ 5) void bills (int house, int food, int clothes);
+ {
+    ignoreUnused (house, food, clothes);
+    return;
+    
+ }
+ 
+
+
+ 6) double area (double r);
+{
+    ignoreUnused (r)
+    return 0.0;
+}
+ 
+
+
+ 7) char listNameOrder (int firstLetterName):
+ {
+    ignoreUnused (firstLetterName);
+    return 'L';
+ }
  */
 
-/*
- 2)
- */
 
-/*
- 3)
- */
+ 8) bool test (int answer1, int answer2, int answer3 = 0);
+ {
+    ignoreUnused (num1, num2, num3);
+    return false;
+ }
+ 
 
-/*
- 4)
- */
 
-/*
- 5)
- */
+ 9) void activity (bool cardio, int weekness, float record = 1.0f );
+ {
+    ignoreUnused (cardio, weekness, float);
+    return;
+ }
+ 
 
-/*
- 6)
- */
 
-/*
- 7)
- */
-
-/*
- 8)
- */
-
-/*
- 9)
- */
-
-/*
- 10)
- */
+ 10) double discount (double price)
+ {
+    ignoreUnused (price);
+    return;
+ }
+ 
 
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
